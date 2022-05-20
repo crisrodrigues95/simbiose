@@ -292,8 +292,25 @@ echo "
 });
 </script>
 <!-- SCRIPT PARA INICIALIAR O GRÁFICO / FIM -->
-"
 
+
+
+
+<button type="button" class="btn btn-success" onClick="window.print()"> Clique aqui para salvar ou imprimir</button>
+
+
+<style>
+
+.container{
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+button{
+    margin-top: 1%;
+}
+
+</style>
 
 
 
