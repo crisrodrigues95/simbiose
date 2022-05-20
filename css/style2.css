@@ -1,0 +1,168 @@
+body {
+    background-color: rgba(151, 209, 151, 0.582);
+   }
+   
+   .secti {
+       max-width: 35%;
+       padding: 5px 20px 5px 20px;
+       background-color: rgb(61, 121, 46);
+   }
+   
+   .secti h1 {
+       text-align: center;
+       
+   }
+   
+   .secti p {
+       color: white;
+       font-size: 15px;
+       text-align: center;
+   }
+   
+   
+   .survey  {
+   
+       padding-top: 2%;
+       text-align: center;
+   
+   
+   }
+   
+   .survey2  {
+   
+       padding-top: 2%;
+       text-align: center;
+       
+   
+   
+   }
+   
+   
+   
+   .form-check.form-check-inline {
+   
+       margin-right: 5%;
+       margin-left: 5%;
+       /*margin-left: 4.5%;*/
+   }
+   
+   #porcentagem {
+   
+       margin-right: 2%;
+       margin-left: 2%;
+   
+   
+   }
+   
+   
+   
+   
+   
+   .text-1 {
+       text-align: left;
+       margin-left: 18%;
+   }
+   
+   .text-2 {
+       text-align: center;
+   
+   
+   }
+   
+   .text-3 {
+       margin-left: 45%;
+       
+   }
+   
+   .form-check-input:checked{
+   
+       color:black;
+       border-color: white;
+       background-color: black;
+       box-shadow: none;
+       background-image: none;
+       
+       
+   }
+   
+   .container {
+   
+       padding-top: 2%;
+       padding-bottom: 2%;
+       background-color: whitesmoke;
+       margin-top: 2%;
+       margin-bottom: 2%;
+       border-radius: 20px;
+   
+   
+   }
+   
+   .question {
+   
+       padding-bottom: 2%;
+   
+   
+   }
+   
+   .question h1 {
+   
+       font-size: 20px;
+       padding-bottom:10px ;
+       margin-left: 5%;
+       padding-top: 20px;
+       margin-right: 5%;
+       
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   @media (max-width: 576px) { 
+       
+       .form-check.form-check-inline {
+   
+           margin-right: 1.7%;
+           margin-left: 1.7%;
+          
+       }
+       
+       
+       
+       
+        
+   
+       #porcentagem {
+   
+           margin-right: 40%;
+           text-align: left;
+       }
+   
+       .survey2 {
+   
+           text-align: left;
+   
+   
+       }
+   
+       
+       
+   
+   }
+   
+   .form-check {
+       margin-left: 5%;
+   }
+   
+   
+   section {
+       max-width: 65%;
+       margin: auto;
+       background-color: whitesmoke;
+       border-radius: 10px;
+       margin-bottom: 3%;
+   
+   }
