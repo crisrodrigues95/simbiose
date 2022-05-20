@@ -18,6 +18,15 @@
     </style>
 </head>
 <body>
+
+ <!-- SCRIPTS BIBLIOTECA GRAFICO -->
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<!-- SCRIPTS BIBLIOTECA GRAFICO / FIM -->
+
     
 
 <div class="container">
@@ -134,9 +143,46 @@ if ($resul == 'P') {
     $texto = "O ideal é que a empresa intensifique e mantenha as trocas simbióticas atuais, procurando aumentar o número de parceiros que tenha acordos ganha-ganha entre empresas co-localizadas. Ao intensificar suas trocas simbióticas, a empresa aumentará o seu know how de troca, e desenvolverá ações de correções dos erros que ainda persistem. Conseguir, por meio de políticas ambientais governamentais, investimentos em infraestrutura e usar plataformas de compartilhamento são essenciais para concretizar a implementação da SI no conjunto de ecossistema industrial que pertence.";
 }
 
+/*Categoria agua e energia */
+$ctg1 = $q[1]+$q[2]+$q[3]+$q[4]+$q[5]+$q[6];
+$tctg1 = 30;
+$p1= number_format(($ctg1/$tctg1)*100, 2, ".");
+
+/*Categoria recurso material*/
+$ctg2 = $q[7]+$q[8]+$q[9]+$q[10]+$q[11]+$q[12];
+$tctg2 = 30;
+$p2= number_format(($ctg2/$tctg2)*100, 2, ".");
+
+/*Categoria acesso a informação*/
+$ctg3 = $q[18]+$q[19]+$q[20];
+$tctg3 = 15;
+$p3= number_format(($ctg3/$tctg3)*100, 2, ".");
+
+/*Categoria compartilhamento de info e confiança*/
+$ctg4 = $q[14]+$q[15]+$q[16]+$q[17];
+$tctg4 = 22;
+$p4= number_format(($ctg4/$tctg4)*100, 2, ".");
+
+/*Categoria Acesso a infraestutura e parceria*/
+$ctg5 = $q[13]+$q[21]+$q[22]+$q[23]+$q[24]+$q[25];
+$tctg5 = 42;
+$p5= number_format(($ctg5/$tctg5)*100, 2, ".");
+
+
+
+
+
+
+
+
 /*Exibição dos resultados*/
 
 echo "<h1>Resultado<h1>";
+
+
+
+
+
 
 
 
@@ -145,18 +191,116 @@ echo "<h1>Resultado<h1>";
 
 echo "
 
-<h1>O resultado da sua empresa é: $resul<h1>
+<h1>O resultado da sua empresa é:<h1>
 <h1>$tipol<h1>
 <p> <b>Caracteristica:</b> $car<P>
-<p> <b>Recomendação:</b> $texto<p>"
-
-
+<p> <b>Recomendação:</b> $texto<p>";
 
 
 
 
 
 ?>
+
+
+
+
+<!-- ELEMENTO PARA CRIAÇÃO DO GRÁFICO -->
+<div id='grafico'></div>
+<!-- ELEMENTO PARA CRIAÇÃO DO GRÁFICO / FIM -->
+
+<!-- SCRIPT PARA INICIALIAR O GRÁFICO -->
+<script>
+	Highcharts.chart('grafico', {
+
+    chart: {
+        polar: true,
+        type: 'line'
+    },
+
+    accessibility: {
+        description: '...'
+    },
+
+    title: {
+        text: ' ',
+        x: -80
+    },
+
+    pane: {
+        size: '80%'
+    },
+
+    xAxis: {
+        categories: ['Água e Energia', 'Recursos Materiais', 'Acesso a informação', 'Compartilhamento de informação e confiança',
+            'Acesso, infraestrutura e parceria'],
+        tickmarkPlacement: 'on',
+        lineWidth: 0
+    },
+
+    yAxis: {
+        gridLineInterpolation: 'polygon',
+        lineWidth: 0,
+        min: 0
+    },
+
+    tooltip: {
+        shared: true,
+        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}%</b><br/>'
+    },
+
+    legend: {
+        align: 'right',
+        verticalAlign: 'middle',
+        layout: 'vertical'
+    },
+
+    series: [{
+        name: '% Atingido',
+        data: [<?php echo"$p1, $p2, $p3, $p4, $p5"?>],
+        color: '#ffc709',
+        pointPlacement: 'on'
+    },{
+    name: '% Máximo',
+        data: [100, 100, 100, 100, 100],
+        color: '#00FA9A',
+        pointPlacement: 'on'
+    }
+    
+
+
+    ],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                pane: {
+                    size: '70%'
+                }
+            }
+        }]
+    }
+
+});
+</script>
+<!-- SCRIPT PARA INICIALIAR O GRÁFICO / FIM -->
+"
+
+
+
+
+
+
+
+
 
 
 </div>

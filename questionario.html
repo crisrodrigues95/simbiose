@@ -32,30 +32,123 @@
     </section>
     
 
-    <!--Questão 1-->
-    <section>
+   <!--Questão 1-->
+   <section>
     <div class="question">
     <h1>1- Sua empresa está apta a trocar água do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
     
+    <!-- ADICIONAR NOS DOIS INPUTS O TRECHO  onclick="validaQ1(this.value)" -->
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="q1" id="q1Radios1" required value=1>
+      <input class="form-check-input" type="radio" name="q1" id="q1Radios1" required value=1 onclick="validaQ1(this.value)">
       <label class="form-check-label" for="q1Radios1">
         Sim
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="q1" id="q1Radios2" required value=0>
+      <input class="form-check-input" type="radio" name="q1" id="q1Radios2" required value=0 onclick="validaQ1(this.value)">
       <label class="form-check-label" for="q1Radios2">
         Não
       </label>
     </div>
     </div>
   </section>
+
+   <!-- SCRIPT NECESSÁRIO PARA FAZER A FUNÇÃO DE VALIDAÇÃO DE QUAL FOI AS RESPOSTAS DE Q1,Q4,Q7,Q10,Q15,Q18  -->
+  <script src="js/validacaojs"></script>
+
+ 
+  <!--
+  <script>
+    function validaQ1(resposta){
+      if(resposta == 0){          
+          document.querySelector("#q2Radio0").checked = true;
+          document.querySelector("#q3Radio0").checked = true;
+          document.querySelector('.q2').classList.add("d-none")
+          document.querySelector('.q3').classList.add("d-none")
+        }else{
+          document.querySelector("#q2Radio1").checked = true;
+          document.querySelector("#q3Radio1").checked = true;
+          document.querySelector('.q2').classList.remove("d-none")
+          document.querySelector('.q3').classList.remove("d-none")
+        }
+    }
+
+    function validaQ4(resposta){
+      if(resposta == 0){          
+          document.querySelector("#q5Radio0").checked = true;
+          document.querySelector("#q6Radio0").checked = true;
+          document.querySelector('.q5').classList.add("d-none")
+          document.querySelector('.q6').classList.add("d-none")
+        }else{
+          document.querySelector("#q5Radio1").checked = true;
+          document.querySelector("#q6Radio1").checked = true;
+          document.querySelector('.q5').classList.remove("d-none")
+          document.querySelector('.q6').classList.remove("d-none")
+        }
+    }
+
+    function validaQ7(resposta){
+        if(resposta == 0){          
+            document.querySelector("#q8Radio0").checked = true;
+            document.querySelector("#q9Radio0").checked = true;
+            document.querySelector('.q8').classList.add("d-none")
+            document.querySelector('.q9').classList.add("d-none")
+          }else{
+            document.querySelector("#q8Radio1").checked = true;
+            document.querySelector("#q9Radio1").checked = true;
+            document.querySelector('.q8').classList.remove("d-none")
+            document.querySelector('.q9').classList.remove("d-none")
+          }
+      }
+    function validaQ10(resposta){
+        if(resposta == 0){          
+            document.querySelector("#q11Radio0").checked = true;
+            document.querySelector("#q12Radio0").checked = true;
+            document.querySelector('.q11').classList.add("d-none")
+            document.querySelector('.q12').classList.add("d-none")
+          }else{
+            document.querySelector("#q11Radio1").checked = true;
+            document.querySelector("#q12Radio1").checked = true;
+            document.querySelector('.q11').classList.remove("d-none")
+            document.querySelector('.q12').classList.remove("d-none")
+          }
+      }
+      function validaQ15(resposta){
+        if(resposta == 0){          
+            document.querySelector("#q16Radio0").checked = true;
+            document.querySelector("#q17Radio0").checked = true;
+            document.querySelector('.q16').classList.add("d-none")
+            document.querySelector('.q17').classList.add("d-none")
+          }else{
+            document.querySelector("#q16Radio1").checked = true;
+            document.querySelector("#q17Radio1").checked = true;
+            document.querySelector('.q16').classList.remove("d-none")
+            document.querySelector('.q17').classList.remove("d-none")
+          }
+      }
+
+      function validaQ18(resposta){
+        if(resposta == 0){          
+            document.querySelector("#q19Radio0").checked = true;
+            document.querySelector("#q20Radio0").checked = true;
+            document.querySelector('.q19').classList.add("d-none")
+            document.querySelector('.q20').classList.add("d-none")
+          }else{
+            document.querySelector("#q19Radio1").checked = true;
+            document.querySelector("#q20Radio1").checked = true;
+            document.querySelector('.q19').classList.remove("d-none")
+            document.querySelector('.q20').classList.remove("d-none")
+          }
+      }
+    
+  </script>
+  -->
    
 
     <!--Questão 2-->
 <section>
-    <div class="question">
+    
+    <div class="question q2 d-none">
     <h1>2- Sua empresa está apta a trocar água do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
     <div class="row">
     <div class="col-4">
@@ -68,6 +161,14 @@
     <div class="row">
         <div class="col-12">
     <div class="survey">
+
+    <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+    <div class="form-check form-check-inline d-none">
+        <input class="form-check-input" type="radio" name="q2" id="q2Radio0" required value=0>
+        <label class="form-check-label" for="q2Radio0">0</label>
+    </div>
+    <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="q2" id="q2Radio1" required value=1>
         <label class="form-check-label" for="q2Radio1">1</label>
@@ -99,16 +200,25 @@
         </div>
         </div>
       </div>
-    </div>
+      </div>
+    <!-- </div> -->
   </section>
     <!--Questão 3-->
 <section>
-    <div class="question">
+    <div class="question q3 d-none">
       <h1>3- Indique a proporção de água do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
       <div class="survey2">
+
+      <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+      <div class="form-check form-check-inline d-none" id="porcentagem">
+          <input class="form-check-input" type="radio" name="q3" id="q3Radio0" required value=0>
+          <label class="form-check-label" for="q3Radio0">0</label>
+      </div>
+      <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+
       <div class="form-check form-check-inline" id="porcentagem">
           <input class="form-check-input" type="radio" name="q3" id="q3Radio1" required value=1>
           <label class="form-check-label" for="q2Radio1">Até 10%</label>
@@ -153,16 +263,16 @@
       <!--Questão 4-->
 <section>
       <div class="question">
-        <h1>4- Sua empresa está apta a trocar energia do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
+        <h1>4- Sua empresa está apta a trocar energia do processo produtivo com outra fábrica localizada em um distrito/parque industrial. </h1>
         
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="q4" id="q4Radios1" required value=1>
+          <input class="form-check-input" type="radio" name="q4" id="q4Radios1" required value=1 onclick="validaQ4(this.value)">
           <label class="form-check-label" for="q4Radios1">
             Sim
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="q4" id="q4Radios2" required value=0>
+          <input class="form-check-input" type="radio" name="q4" id="q4Radios2" required value=0 onclick="validaQ4(this.value)">
           <label class="form-check-label" for="q4Radios2">
             Não
           </label>
@@ -173,7 +283,7 @@
       </section>
         <!--Questão 5-->
 <section>
-    <div class="question">
+    <div class="question q5 d-none">
       <h1>5- Sua empresa está apta a trocar energia do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -185,6 +295,13 @@
       </div>
       <div class="row">
           <div class="col-12">
+
+   <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+    <div class="form-check form-check-inline d-none">
+      <input class="form-check-input" type="radio" name="q5" id="q5Radio0" required value=0>
+      <label class="form-check-label" for="q5Radio0">0</label>
+  </div>
+  <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="survey">
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q5" id="q5Radio1" required value=1>
@@ -222,11 +339,18 @@
 
       <!--Questão 6-->
 <section>
-    <div class="question">
+    <div class="question q6 d-none">
       <h1>6- Indique a proporção de energia do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
+
+    <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+    <div class="form-check form-check-inline d-none">
+      <input class="form-check-input" type="radio" name="q6" id="q6Radio0" required value=0>
+      <label class="form-check-label" for="q6Radio0">0</label>
+  </div>
+  <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="survey2">
       <div class="form-check form-check-inline" id="porcentagem">
           <input class="form-check-input" type="radio" name="q6" id="q6Radio1" required value=1>
@@ -273,13 +397,13 @@
       <h1>7- Sua empresa está apta a trocar resíduos do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
       
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q7" id="q7Radios1" required value=1>
+        <input class="form-check-input" type="radio" name="q7" id="q7Radios1" required value=1 onclick="validaQ7(this.value)">
         <label class="form-check-label" for="q7Radios1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q7" id="q7Radios2" required value=0>
+        <input class="form-check-input" type="radio" name="q7" id="q7Radios2" required value=0 onclick="validaQ7(this.value)">
         <label class="form-check-label" for="q7Radios2">
           Não
         </label>
@@ -290,7 +414,7 @@
 
       <!--Questão 8-->
 <section>
-    <div class="question">
+    <div class="question q8 d-none">
       <h1>8- Sua empresa está apta a trocar resíduos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -303,6 +427,12 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+      <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+    <div class="form-check form-check-inline d-none">
+      <input class="form-check-input" type="radio" name="q8" id="q8Radio0" required value=0>
+      <label class="form-check-label" for="q8Radio0">0</label>
+    </div>
+      <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q8" id="q8Radio1" required value=1>
           <label class="form-check-label" for="q8Radio1">1</label>
@@ -339,12 +469,20 @@
 
       <!--Questão 9-->
 <section>
-    <div class="question">
+    <div class="question q9 d-none">
       <h1>9- Indique a proporção de resíduos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
       <div class="survey2">
+
+
+      <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+    <div class="form-check form-check-inline d-none">
+      <input class="form-check-input" type="radio" name="q9" id="q9Radio0" required value=0>
+      <label class="form-check-label" for="q9Radio0">0</label>
+    </div>
+    <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline" id="porcentagem">
           <input class="form-check-input" type="radio" name="q9" id="q9Radio1" required value=1>
           <label class="form-check-label" for="q9Radio1">Até 10%</label>
@@ -389,13 +527,13 @@
       <h1>10- Sua empresa está apta a trocar subprodutos do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
       
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q10" id="q10Radios1" required value=1>
+        <input class="form-check-input" type="radio" name="q10" id="q10Radios1" required value=1 onclick="validaQ10(this.value)">
         <label class="form-check-label" for="q10Radios1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q10" id="q10Radios2" required value=0>
+        <input class="form-check-input" type="radio" name="q10" id="q10Radios2" required value=0 onclick="validaQ10(this.value)">
         <label class="form-check-label" for="q10Radios2">
           Não
         </label>
@@ -407,7 +545,7 @@
       <!--Questão 11-->
       <section>
 
-    <div class="question">
+    <div class="question q11 d-none">
       <h1>11- Sua empresa está apta a trocar subprodutos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -420,6 +558,12 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+        <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+        <div class="form-check form-check-inline d-none" id="porcentagem">
+          <input class="form-check-input" type="radio" name="q11" id="q11Radio0" required value=0>
+          <label class="form-check-label" for="q11Radio0">0</label>
+        </div>
+       <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q11" id="q11Radio1" required value=1>
           <label class="form-check-label" for="q11Radio1">1</label>
@@ -456,12 +600,20 @@
 
       <!--Questão 12-->
 <section>
-    <div class="question">
+    <div class="question q12 d-none">
       <h1>12- Indique a proporção de subprodutos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
       <div class="survey2">
+
+        <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+        <div class="form-check form-check-inline d-none" id="porcentagem">
+          <input class="form-check-input" type="radio" name="q12" id="q12Radio0" required value=0>
+          <label class="form-check-label" for="q12Radio0">0</label>
+        </div>
+       <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+</body>
       <div class="form-check form-check-inline" id="porcentagem">
           <input class="form-check-input" type="radio" name="q12" id="q12Radio1" required value=1>
           <label class="form-check-label" for="q12Radio1">Até 10%</label>
@@ -612,13 +764,13 @@
       <h1>15- Sua empresa compartilha informações de produção com outra fábrica localizada em um distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
       
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q15" id="q15Radios1" required value=1>
+        <input class="form-check-input" type="radio" name="q15" id="q15Radios1" required value=1 onclick="validaQ15(this.value)">
         <label class="form-check-label" for="q15Radios1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q15" id="q15Radios2" required value=0>
+        <input class="form-check-input" type="radio" name="q15" id="q15Radios2" required value=0 onclick="validaQ15(this.value)">
         <label class="form-check-label" for="q15Radios2">
           Não
         </label>
@@ -631,7 +783,7 @@
 
        <section>
 
-    <div class="question">
+    <div class="question q16 d-none">
       <h1>16- Sua empresa compartilha informações de produção de nível estratégico e tático com outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -644,6 +796,12 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+            <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+        <div class="form-check form-check-inline d-none">
+          <input class="form-check-input" type="radio" name="q16" id="q16Radio0" required value=0>
+          <label class="form-check-label" for="q16Radio0">0</label>
+          </div>
+            <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q16" id="q16Radio1" required value=1>
           <label class="form-check-label" for="q16Radio1">1</label>
@@ -680,7 +838,7 @@
 
        <!--Questão 17-->
 <section>
-    <div class="question">
+    <div class="question q17 d-none">
       <h1>17- Sua empresa compartilha frequentemente informações de produção com outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -693,6 +851,13 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+
+           <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+          <div class="form-check form-check-inline d-none">
+            <input class="form-check-input" type="radio" name="q17" id="q17Radio0" required value=0>
+            <label class="form-check-label" for="q17Radio0">0</label>
+            </div>
+      <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q17" id="q17Radio1" required value=1>
           <label class="form-check-label" for="q17Radio1">1</label>
@@ -739,13 +904,13 @@
       <h1>18- Sua empresa tem acesso a dados/informação de produção de outra fábrica localizada em um distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
       
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q18" id="q18Radios1" required value=1>
+        <input class="form-check-input" type="radio" name="q18" id="q18Radios1" required value=1 onclick="validaQ18(this.value)">
         <label class="form-check-label" for="q18Radios1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="q18" id="q18Radios2" required value=0>
+        <input class="form-check-input" type="radio" name="q18" id="q18Radios2" required value=0 onclick="validaQ18(this.value)">
         <label class="form-check-label" for="q18Radios2">
           Não
         </label>
@@ -756,7 +921,7 @@
 
       <section>
 
-    <div class="question">
+    <div class="question q19 d-none">
       <h1>19- Sua empresa tem acesso a dados/informação de produção de nível estratégico e tático de outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -769,6 +934,12 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+        <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+        <div class="form-check form-check-inline d-none">
+          <input class="form-check-input" type="radio" name="q19" id="q19Radio0" required value=0>
+          <label class="form-check-label" for="q19Radio0">0</label>
+          </div>
+        <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q19" id="q19Radio1" required value=1>
           <label class="form-check-label" for="q19Radio1">1</label>
@@ -806,7 +977,7 @@
 
       <section>
 
-    <div class="question">
+    <div class="question q20 d-none">
       <h1>20- Sua empresa tem acesso frequente a dados/informação de produção de outra fábrica localizada em um distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
@@ -819,6 +990,12 @@
       <div class="row">
           <div class="col-12">
       <div class="survey">
+        <!-- BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
+        <div class="form-check form-check-inline d-none">
+          <input class="form-check-input" type="radio" name="q20" id="q20Radio0" required value=0>
+          <label class="form-check-label" for="q20Radio0">0</label>
+          </div>
+      <!-- FIM - BLOCO ADICIONADO PARA PERMITIR A PASSAGEM DO VALOR 0 NA QUESTÃO -->
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="q20" id="q20Radio1" required value=1>
           <label class="form-check-label" for="q20Radio1">1</label>
