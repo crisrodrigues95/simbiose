@@ -101,72 +101,72 @@ if ($media > 4.67) {
 if ($resul == 'NIM') {
 
 
-    $car = "O grupo “não interessada no momento” agrupa as empresas que por questões de desconhecimento, inviabilidade econômica ou por decisão interna da própria empresa, por ora, não se interessa em praticar a SI com outra indústria geograficamente próxima. Considera-se nessa tipologia as empresas que ainda não realizam a troca de nenhum recurso e não tem a capacidade de troca (fatores facilitadores).";
-    $texto = "Sugere-se que, em razão dos benefícios da SI e pela crescente escassez de recursos materiais, a empresa procure informações sobre os conceitos que envolvem a SI, começando uma reflexão sobre a sua funcionalidade e possível inserção na estratégia de negócios da empresa. Associações locais podem ajudar no processo de capacitação e levantamento de informação sobre o assunto.";
+    $car = "O grupo “não interessada no momento” agrupa as empresas que por questões de desconhecimento, inviabilidade econômica ou por decisão interna da própria empresa, por ora, não se interessa em praticar a Simbiose industrial com outra indústria geograficamente próxima. Considera-se nessa tipologia as empresas que ainda não realizam a troca de nenhum recurso e não tem a capacidade de troca (fatores facilitadores).";
+    $texto = "Sugere-se que, em razão dos benefícios da Simbiose industrial e pela crescente escassez de recursos materiais, a empresa procure informações sobre os conceitos que envolvem a Simbiose industrial, começando uma reflexão sobre a sua funcionalidade e possível inserção na estratégia de negócios da empresa. Associações locais podem ajudar no processo de capacitação e levantamento de informação sobre o assunto.";
 
 }
 
 
 if ($resul == 'NPM') {
 
-    $car = 'O grupo “não preparada no momento” classifica as empresas que identificaram alguns resíduos e subprodutos como opção de troca com outras indústrias geograficamente próximas, porém têm dificuldades em estabelecer parcerias, compartilhar e acessar informação de recursos, e ter infraestrutura disponível; estando despreparada no momento para implementar a SI. Considera-se nessa tipologia as empresas que realizam apenas a troca de resíduos e/ou subprodutos, em baixa frequência e quantidade, mas não tem ainda a capacidade de troca (fatores facilitadores).';
-    $texto = "Recomenda-se que a empresa se esforce para identificar recursos de troca variados e inicie as tratativas para captação de possíveis parceiros de troca dentro do conjunto de empresas co-localizadas. Aconselha-se que a empresa focalize parceiros que poderão absorver quantidades razoáveis de recursos e que tenham constância no processo de compartilhamento. A conjuntura de fatores relacionados à confiança, parceria, informação, políticas públicas e infraestrutura devem ser considerados pela empresa para aprofundar os reais motivos da falta de preparo atual para implementação da SI.";
+    $car = 'O grupo “não preparada no momento” classifica as empresas que identificaram alguns resíduos e subprodutos como opção de troca com outras indústrias geograficamente próximas, porém têm dificuldades em estabelecer parcerias, compartilhar e acessar informação de recursos, e ter infraestrutura disponível; estando despreparada no momento para implementar a Simbiose industrial. Considera-se nessa tipologia as empresas que realizam apenas a troca de resíduos e/ou subprodutos, em baixa frequência e quantidade, mas não tem ainda a capacidade de troca (fatores facilitadores).';
+    $texto = "Recomenda-se que a empresa se esforce para identificar recursos de troca variados e inicie as tratativas para captação de possíveis parceiros de troca dentro do conjunto de empresas co-localizadas. Aconselha-se que a empresa focalize parceiros que poderão absorver quantidades razoáveis de recursos e que tenham constância no processo de compartilhamento. A conjuntura de fatores relacionados à confiança, parceria, informação, políticas públicas e infraestrutura devem ser considerados pela empresa para aprofundar os reais motivos da falta de preparo atual para implementação da Simbiose industrial.";
 
 }
 
 
 if ($resul == 'CNI') {
 
-    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a SI, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível I” associa as empresas que realizam apenas a troca de resíduos e subprodutos, em média frequência e quantidade, e tem baixa capacidade de troca (fatores facilitadores).';
-    $texto = "Propõe-se que as empresas explorem melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
+    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a Simbiose industrial, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível I” associa as empresas que realizam apenas a troca de resíduos e subprodutos, em média frequência e quantidade, e tem baixa capacidade de troca (fatores facilitadores).';
+    $texto = "Propõe-se que a empresa explore melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
 
 }
 
 if ($resul == 'CNII') {
 
-    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a SI, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível II” agrega empresas que realizam apenas a troca de resíduos e subprodutos, em média frequência e quantidade, e tem média capacidade de troca (fatores facilitadores).';
-    $texto = "Propõe-se que as empresas explorem melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
+    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a Simbiose industrial, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível II” agrega empresas que realizam apenas a troca de resíduos e subprodutos, em média frequência e quantidade, e tem média capacidade de troca (fatores facilitadores).';
+    $texto = "Propõe-se que a empresa explore melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
 
 }
 
 if ($resul == 'CNIII') {
 
-    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a SI, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível III”  agrupa empresas que realizam apenas a troca de resíduos e subprodutos, em alta frequência e quantidade, e tem alta capacidade de troca (fatores facilitadores).';
-    $texto = "Propõe-se que as empresas explorem melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
+    $car = 'O grupo “a caminho” engloba empresas que tem potencial para implementar a Simbiose industrial, todavia ainda têm embaraços no estabelecimento de vínculos fortes de confiança com parceiros, no acesso às informações de produção dos agentes que realiza a troca, e na obtenção de subsídios e financiamento. O “a caminho – nível III”  agrupa empresas que realizam apenas a troca de resíduos e subprodutos, em alta frequência e quantidade, e tem alta capacidade de troca (fatores facilitadores).';
+    $texto = "Propõe-se que a empresa explore melhor as relações com os parceiros, tanto em quantidade de agentes de troca quanto em qualidade da relação, e também melhore a comunicação com parceiros pouco frequentes e futuros, principalmente no quesito de transparência. O uso de tecnologias da indústria 4.0, como o Big Data, podem ajudar a comunicação entre os parceiros da relação simbiótica. Demais, a criação de contratos poderá mitigar os problemas de confiança.";
 
 }
 
 
 if ($resul == 'P') {
 
-    $car = 'O grupo “preparada” classifica as empresas como preparadas para implementar a SI, visto que desenvolve boas relações com os parceiros, consegue compartilhar e captar informação com a cadeia, tem acesso a políticas de incentivo e de infraestrutura, além de alcançar ganhos econômicos com a SI. Acredita que a SI é uma estratégia que torna os sistemas produtivos circulares, sendo fundamental para a gestão de resíduos. Considera-se nessa tipologia as empresas que realizam a troca de água, energia, resíduos e subprodutos, em alta frequência e quantidade, e tem alta capacidade de troca (fatores facilitadores).';
-    $texto = "O ideal é que a empresa intensifique e mantenha as trocas simbióticas atuais, procurando aumentar o número de parceiros que tenha acordos ganha-ganha entre empresas co-localizadas. Ao intensificar suas trocas simbióticas, a empresa aumentará o seu know how de troca, e desenvolverá ações de correções dos erros que ainda persistem. Conseguir, por meio de políticas ambientais governamentais, investimentos em infraestrutura e usar plataformas de compartilhamento são essenciais para concretizar a implementação da SI no conjunto de ecossistema industrial que pertence.";
+    $car = 'O grupo “preparada” classifica as empresas como preparadas para implementar a Simbiose industrial, visto que desenvolve boas relações com os parceiros, consegue compartilhar e captar informação com a cadeia, tem acesso a políticas de incentivo e de infraestrutura, além de alcançar ganhos econômicos com a Simbiose industrial. Acredita que a Simbiose industrial é uma estratégia que torna os sistemas produtivos circulares, sendo fundamental para a gestão de resíduos. Considera-se nessa tipologia as empresas que realizam a troca de água, energia, resíduos e subprodutos, em alta frequência e quantidade, e tem alta capacidade de troca (fatores facilitadores).';
+    $texto = "O ideal é que a empresa intensifique e mantenha as trocas simbióticas atuais, procurando aumentar o número de parceiros que tenha acordos ganha-ganha entre empresas co-localizadas. Ao intensificar suas trocas simbióticas, a empresa aumentará o seu know how de troca, e desenvolverá ações de correções dos erros que ainda persistem. Conseguir, por meio de políticas ambientais governamentais, investimentos em infraestrutura e usar plataformas de compartilhamento são essenciais para concretizar a implementação da Simbiose industrial no conjunto de ecossistema industrial que pertence.";
 }
 
 /*Categoria agua e energia */
 $ctg1 = $q[1]+$q[2]+$q[3]+$q[4]+$q[5]+$q[6];
 $tctg1 = 30;
-$p1= number_format(($ctg1/$tctg1)*100, 2, ".");
+$p1= ($ctg1/$tctg1)*100;
 
 /*Categoria recurso material*/
 $ctg2 = $q[7]+$q[8]+$q[9]+$q[10]+$q[11]+$q[12];
 $tctg2 = 30;
-$p2= number_format(($ctg2/$tctg2)*100, 2, ".");
+$p2= ($ctg2/$tctg2)*100;
 
 /*Categoria acesso a informação*/
 $ctg3 = $q[18]+$q[19]+$q[20];
 $tctg3 = 15;
-$p3= number_format(($ctg3/$tctg3)*100, 2, ".");
+$p3= ($ctg3/$tctg3)*100;
 
 /*Categoria compartilhamento de info e confiança*/
 $ctg4 = $q[14]+$q[15]+$q[16]+$q[17];
 $tctg4 = 22;
-$p4= number_format(($ctg4/$tctg4)*100, 2, ".");
+$p4= ($ctg4/$tctg4)*100;
 
 /*Categoria Acesso a infraestutura e parceria*/
 $ctg5 = $q[13]+$q[21]+$q[22]+$q[23]+$q[24]+$q[25];
 $tctg5 = 42;
-$p5= number_format(($ctg5/$tctg5)*100, 2, ".");
+$p5= ($ctg5/$tctg5)*100;
 
 
 
@@ -177,7 +177,7 @@ $p5= number_format(($ctg5/$tctg5)*100, 2, ".");
 
 /*Exibição dos resultados*/
 
-echo "<h1>Resultado<h1>";
+// echo "<h1>Resultado<h1>";
 
 
 
@@ -190,7 +190,6 @@ echo "<h1>Resultado<h1>";
 
 
 echo "
-
 <h1>O resultado da sua empresa é:<h1>
 <h1>$tipol<h1>
 <p> <b>Caracteristica:</b> $car<P>
@@ -223,8 +222,8 @@ echo "
     },
 
     title: {
-        text: ' ',
-        x: -80
+        text: 'Desempenho da empresa',
+        x: -60
     },
 
     pane: {
@@ -257,7 +256,8 @@ echo "
 
     series: [{
         name: '% Atingido',
-        data: [<?php echo"$p1, $p2, $p3, $p4, $p5"?>],
+        
+        data: [<?php echo $p1?>, <?php echo $p2?>, <?php echo $p3?>, <?php echo $p4?>, <?php echo $p5?>],
         color: '#ffc709',
         pointPlacement: 'on'
     },{

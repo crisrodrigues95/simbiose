@@ -16,7 +16,315 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/global.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+    <style>
+      body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(assets/img/bg-body4.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.content {
+    
+  margin: 130px 100px;
+    
+}
+
+
+
+
+
+
+.content .info h2 {
+   
+    font-size:2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(206, 207, 219);
+}
+
+
+
+ .teste  {
+    color:white;
+    font-size:3rem;
+    font-weight: 800;
+    background-color:#31313348 ;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:1%;
+    text-align: center;
+    justify-content: center;
+  align-items: center;
+  text-shadow: white 0px 1px 5px;
+   
+}
+
+@media(max-width: 768px){
+  .teste  {
+    
+      width: 95%;
+      margin:auto;
+     
+  }
+  }
+
+
+  
+
+
+ 
+
+h2 {text-align: center;
+  color:white;
+  font-size: 20px;
+  margin-top: 10px;}
+
+h3 {
+    text-align: center;
+    padding-top:20px;
+    color:white;
+    font-size:70px;
+    text-shadow: white 0px 1px 10px;
+}
+
+
+
+.card {
+  background: none;
+  border: none;
+  color:white;
+    font-size:15px;
+    font-weight: 800;
+    background-color:#313133af ;
+    border-radius: 50px;
+    margin:0.5%; 
+    margin-top:3%;
+    text-align: center;
+    justify-content: center;
+  align-items:center;
+  
+  
+}
+
+
+@media(min-width: 1960px){
+  .card  {
+    
+     font-size:30px;
+  }
+  }
+
+
+
+
+
+footer {
+    background-image: linear-gradient(rgb(52, 87, 43), rgb(17, 44, 3));
+    
+    padding-bottom: 70px;
+}
+
+/*rgb(8, 8, 39)*/
+
+
+
+
+
+  @media(max-width: 768px){
+    a {
+      min-width: 300px;
+      min-height: 60px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+      color: #313133;
+    background: linear-gradient(90deg, rgba(255, 197, 5) 0%, rgb(216, 238, 21) 100%);
+      border: none;
+      border-radius: 1000px;
+      box-shadow: 12px 12px 50px #313133;
+      transition: all 0.1s ;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+    }
+    }
+  
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a {
+    width: 300px;
+    height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+  background: linear-gradient(90deg, rgba(255, 197, 5) 0%, rgb(216, 238, 21) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 50px #313133;
+    transition: all 0.1s ;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    }
+
+    @media(min-width: 1960px){
+      a  {
+        
+         width: 500px;
+         font-size:35px;
+    
+         
+      }
+      }
+
+
+    a:hover{
+      color: black;
+      
+    }
+   /* laranja: rgba(255, 197, 5, 0.64)*/
+   /* amarelo: rgb(221, 241, 102) 100%)*/
+  
+  /*button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #3131338e;
+    box-shadow: 0 0 60px #313133;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .botao:hover, .botao:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid rgba(255, 197, 5, 0.64);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }*/
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+  @media(max-width: 768px){
+    .text   {
+      
+        
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    }
+
+  .text {
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .text span {
+    font-size: 50px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    animation: zoomup 3s ease infinite;
+    animation-delay: calc(100ms * var(--i));
+  }
+  
+  .dot {
+    display: block;
+  }
+  
+  @keyframes zoomup {
+    0%,
+    100% {
+      color: white;
+      filter: blur(0.5px);
+      text-shadow: 0 0 35px #e6ddc9, 0 0 35px #e6ddc9, 0 0 35px #e6ddc9,
+        0 0 10px ;
+    }
+  
+    100% {
+      filter: blur(0);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
+
+  .disclaimer{
+    display: none;
+}
+    </style>
     
 </head>
 <body>
@@ -26,6 +334,7 @@
          
               
               <div class="text">
+                <span id="espacoinit"></span> 
                 <span style="--i:1">S</span>
                 <span style="--i:2">I</span>
                 <span style="--i:3">M</span>
@@ -34,7 +343,8 @@
                 <span style="--i:7">O</span>
                 <span style="--i:8">S</span>
                 <span style="--i:9">E</span>
-               <span style="margin:15px"></span> 
+               <span id="espaco"></span> 
+               <br>
                 <span style="--i:10">I</span>
                 <span style="--i:12">N</span>
                 <span style="--i:13">D</span>
@@ -46,31 +356,96 @@
                 <span style="--i:19">A</span>
                 <span style="--i:20">L</span>
               </div>
+
+              <style>
+
+              /* #espaco{
+                margin: 15px;
+                  }
+
+
+                @media (max-width: 768px){
+
+                  
+                  .text {
+
+                    font-size: 1px;
+                    margin-right: 6%;
+                    font-weight: 1%;
+                  
+
+                  }
+
+                  #espaco{
+
+                    margin-right: 8%;
+
+
+
+                  }
+
+                  #espacoinit{
+
+                      margin-left: 13%;
+
+
+
+                      }
+
+                  
+
+
+
+
+
+                } */
+                  
+
+
+
+              </style>
           
              
             
+       
+        <p class="teste">Quer saber se a sua empresa está pronta para implementar a simbiose
+          industrial?</p> 
+
+          <div class="container">
+            <div class="card-group">
+                <div class="card">
+            
+                  <div class="card-body" style="text-align: center;">
+                    
+                    <p class="card-text">“Simbiose industrial é a troca física de materiais, energia, água e subprodutos
+                      entre empresas co-localizadas (CHERTOW, 2000)”. Na prática, a simbiose
+                      industrial acontece quando empresas trocam recursos, formando uma rede de
+                      compartilhamento, em que pelo menos três fábricas localizadas em
+                      distritos/parques industriais trocam ao menos dois recursos.</p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  
+                  <div class="card-body" style="text-align: center;">
+                  
+                    <p class="card-text">Este questionário foi desenvolvido em uma pesquisa da Universidade Estadual
+                      Paulista “Júlio de Mesquita Filho” (UNESP), e é composto por perguntas
+                      afirmativas com respostas em escalas de concordância. Após o preenchimento,
+                      você receberá o resultado da avaliação da sua empresa.</p>
+                   
+                  </div>
+                </div>
             </div>
-        </div>
-      
-        <p class="teste">A sua empresa está pronta para implementar a simbiose industrial?</p>
-                
-              
-              <div class="wrap">
+        
+            <div class="wrap">
             <a href="identificacao.html" style="margin-top:20px;" >Começar</a>
-          </div>
+         <br>
+
+         
             </div>
 
-            <h2>Fabiana Liar Agudo</h2>
-          
 
-
-          <div class="custom-shape-divider-bottom-1649203906">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-            </svg>
-        </div>
 
 
       <!-- <div class="container">
@@ -95,7 +470,7 @@
   
               <img src="assets/img/sem fundo.jpg" alt=""> -->
 
-
+<!--
     </section>
 
 
@@ -116,7 +491,7 @@
           <div class="card h-100">
             
             <div class="card-body">
-             <!--<h5 class="card-title">Card title</h5> -->
+            <h5 class="card-title">Card title</h5> 
               <p class="card-text">Demais, uma fábrica de plásticos troca água residual com a empresa de energia, recebendo fluxos de calor deste processo. Forma-se uma rede de compartilhamento, em que pelo menos três fábricas trocam ao menos dois recursos. 
               </p>
             </div>
@@ -147,8 +522,8 @@
     </div>
     </footer>
     
-
-    
+-->
+  
 
 
 

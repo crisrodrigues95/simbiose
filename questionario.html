@@ -7,11 +7,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.css">
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
     <link href="css/global.css" rel="stylesheet">
  
 
     <title>Simbiose industrial</title>
+
+    <style>
+      body {
+    background-color: rgba(151, 209, 151, 0.582);
+   }
+   
+   .secti {
+       width: 65%;
+       padding: 5px 20px 5px 20px;
+       background-color: rgb(52, 87, 43);
+       box-shadow: rgb(88, 224, 88) 0px 5px 25px;
+   }
+
+   .secti2 {
+    width: 65%;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(22, 87, 61);
+    color: white;
+    text-align: center;
+    box-shadow: rgb(187, 206, 187) 0px 5px 25px;
+}
+
+   @media(max-width: 768px){
+    .secti  {
+       width: 80%;
+      
+        
+    }
+    }
+
+
+   
+   .secti h1 {
+       text-align: center;
+       color: white;
+       
+   }
+
+   @media(max-width: 768px){
+    .secti h1  {
+       font-size: 23px;
+      
+        
+    }
+    }
+   
+   .secti p {
+       color: white;
+       font-size: 15px;
+       text-align: center;
+   }
+   
+   
+   .survey  {
+   
+       padding-top: 2%;
+       text-align: center;
+   
+   
+   }
+   
+   .survey2  {
+   
+       padding-top: 2%;
+       text-align: center;
+       
+   
+   
+   }
+   
+   
+   
+   .form-check.form-check-inline {
+   
+       margin-right: 5%;
+       margin-left: 5%;
+       /*margin-left: 4.5%;*/
+   }
+   
+   #porcentagem {
+   
+       margin-right: 2%;
+       margin-left: 2%;
+   
+   
+   }
+   
+   
+   
+   
+   
+   .text-1 {
+       text-align: left;
+       margin-left: 18%;
+   }
+   
+   .text-2 {
+       text-align: center;
+   
+   
+   }
+   
+   .text-3 {
+       margin-left: 45%;
+       
+   }
+
+   @media(max-width: 768px){
+    .text-3  {
+        margin-left:-10px;
+        
+    }
+    }
+   
+   .form-check-input:checked{
+   
+       color:black;
+       border-color: white;
+       background-color: black;
+       box-shadow: none;
+       background-image: none;
+       
+       
+   }
+   
+   .container {
+   
+       padding-top: 2%;
+       padding-bottom: 2%;
+       background-color: whitesmoke;
+       margin-top: 2%;
+       margin-bottom: 2%;
+       border-radius: 20px;
+   
+   
+   }
+   
+   .question {
+   
+       padding-bottom: 2%;
+   
+   
+   }
+   
+   .question h1 {
+   
+       font-size: 20px;
+       padding-bottom:10px ;
+       margin-left: 5%;
+       padding-top: 20px;
+       margin-right: 5%;
+       
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   @media (max-width: 576px) { 
+       
+       .form-check.form-check-inline {
+   
+           margin-right: 1.7%;
+           margin-left: 1.7%;
+          
+       }
+       
+       
+       
+       
+        
+   
+       #porcentagem {
+   
+           margin-right: 40%;
+           text-align: left;
+       }
+   
+       .survey2 {
+   
+           text-align: left;
+   
+   
+       }
+   
+       
+       
+   
+   }
+   
+   .form-check {
+       margin-left: 5%;
+   }
+
+   .form-check.form-check-inline{
+    margin:4%;
+   }
+   
+   
+   section {
+       width: 65%;
+       margin: auto;
+       background-color: whitesmoke;
+       border-radius: 10px;
+       margin-bottom: 3%;
+   
+   }
+
+   @media(max-width: 768px){
+    section  {
+       width: 80%;
+        
+        
+    }
+    }
+    </style>
   </head>
 
   <body>
@@ -22,20 +241,22 @@
 
 
     <form action="php/prog.php" method="POST">
-      <section style="margin-top: 4%; padding-bottom: 1%;">
-      <h1 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 2%;">SEÇÃO - DIMENSÃO RECURSO DE TROCA</h1>
-      <p style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 15px;">Avalia a capacidade da empresa em ter os recursos de troca necessários para a prática da simbiose industrial (água, energia, subprodutos e resíduos).</p>
-    </section>
+      <section class="secti2" style="margin-top: 3%;">
+      <h1>Agora você irá responder questões sobre a capacidade da empresa em
+        ter os recursos de troca necessários para a prática da simbiose industrial
+        (água, energia, subprodutos e resíduos).</h1>
+      </section>
+    
 
     <section class="secti">
-      <h1>RECURSO ÁGUA</h2>
+      <h1>RECURSO ÁGUA</h1>
     </section>
     
 
    <!--Questão 1-->
    <section>
     <div class="question">
-    <h1>1- Sua empresa está apta a trocar água do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar água do processo produtivo com outra fábrica localizada em seu distrito/parque industrial?</h1>
     
     <!-- ADICIONAR NOS DOIS INPUTS O TRECHO  onclick="validaQ1(this.value)" -->
     <div class="form-check">
@@ -149,7 +370,7 @@
 <section>
     
     <div class="question q2 d-none">
-    <h1>2- Sua empresa está apta a trocar água do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar água do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em seu distrito/parque industrial?</h1>
     <div class="row">
     <div class="col-4">
     <p class="text-1">1-Discordo totalmente</p></div>
@@ -206,7 +427,7 @@
     <!--Questão 3-->
 <section>
     <div class="question q3 d-none">
-      <h1>3- Indique a proporção de água do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
+      <h1> Indique a proporção de água do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em seu distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
@@ -263,7 +484,7 @@
       <!--Questão 4-->
 <section>
       <div class="question">
-        <h1>4- Sua empresa está apta a trocar energia do processo produtivo com outra fábrica localizada em um distrito/parque industrial. </h1>
+        <h1> Sua empresa está apta a trocar energia do processo produtivo com outra fábrica localizada em seu distrito/parque industrial? </h1>
         
         <div class="form-check">
           <input class="form-check-input" type="radio" name="q4" id="q4Radios1" required value=1 onclick="validaQ4(this.value)">
@@ -284,7 +505,7 @@
         <!--Questão 5-->
 <section>
     <div class="question q5 d-none">
-      <h1>5- Sua empresa está apta a trocar energia do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar energia do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -340,7 +561,7 @@
       <!--Questão 6-->
 <section>
     <div class="question q6 d-none">
-      <h1>6- Indique a proporção de energia do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
+      <h1> Indique a proporção de energia do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em seu distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
@@ -388,13 +609,13 @@
     </section>
     <section class="secti">
       <h1>RECURSO RESÍDUOS</h2>
-      <p>Qualquer tipo de material, proveniente de um processo produtivo principal, que não tenha mais utilidade</p>
+      <p>Qualquer tipo de material, proveniente de um processo produtivo principal, que não tenha mais utilidade e seja descartado.</p>
     </section>
 
       <!--Questão 7-->
       <section>
     <div class="question">
-      <h1>7- Sua empresa está apta a trocar resíduos do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar resíduos do processo produtivo com outra fábrica localizada em seu distrito/parque industrial?</h1>
       
       <div class="form-check">
         <input class="form-check-input" type="radio" name="q7" id="q7Radios1" required value=1 onclick="validaQ7(this.value)">
@@ -415,7 +636,7 @@
       <!--Questão 8-->
 <section>
     <div class="question q8 d-none">
-      <h1>8- Sua empresa está apta a trocar resíduos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar resíduos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -470,7 +691,7 @@
       <!--Questão 9-->
 <section>
     <div class="question q9 d-none">
-      <h1>9- Indique a proporção de resíduos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
+      <h1> Indique a proporção de resíduos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em seu distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
@@ -517,14 +738,14 @@
       </div>
     </section>
     <section class="secti">
-      <h1>SUBPRODUTOS</h1>
-      <p>Qualquer tipo de material, proveniente de um processo produtivo principal, que ainda pode ser utilizado como produto secundário</p>
+      <h1>RECURSO SUBPRODUTOS</h1>
+      <p>Qualquer tipo de material, proveniente de um processo produtivo principal, que ainda pode ser utilizado como produto secundário.</p>
     </section>
 
       <!--Questão 10-->
       <section>
      <div class="question">
-      <h1>10- Sua empresa está apta a trocar subprodutos do processo produtivo com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar subprodutos do processo produtivo com outra fábrica localizada em seu distrito/parque industrial?</h1>
       
       <div class="form-check">
         <input class="form-check-input" type="radio" name="q10" id="q10Radios1" required value=1 onclick="validaQ10(this.value)">
@@ -546,7 +767,7 @@
       <section>
 
     <div class="question q11 d-none">
-      <h1>11- Sua empresa está apta a trocar subprodutos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa está apta a trocar subprodutos do processo produtivo frequentemente (pelo menos uma vez durante a semana) com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -601,7 +822,7 @@
       <!--Questão 12-->
 <section>
     <div class="question q12 d-none">
-      <h1>12- Indique a proporção de subprodutos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em um distrito/parque industrial:</h1>
+      <h1> Indique a proporção de subprodutos do processo produtivo que sua empresa está apta a trocar com outra fábrica localizada em seu distrito/parque industrial:</h1>
       
       <div class="row">
           <div class="col-12">
@@ -648,20 +869,22 @@
       </div>
     </section>
 
-    <section class="secti">
-      <h1>Seção - DIMENSÃO RECURSO DE TROCA</h1>
-      <p>Avalia a capacidade da empresa em possuir os fatores que facilitam a implementação da simbiose industrial (confiança, informação, condições de acesso e infraestrutura).</p>
-     </section>
-     <section class="secti">
+    <section class="secti2">
+      <h1>Agora você irá responder questões sobre a capacidade da empresa em
+        possuir os fatores que facilitam a implementação da simbiose industrial
+        (confiança, informação, condições de acesso e infraestrutura).</h1>
+      </section>
+
+      <section class="secti">
       <h1>NOVAS PARCERIAS</h1>
-    </section>
+    </section> 
 
       <!--Questão 13-->
 
   <section>
 
     <div class="question">
-      <h1>13- Avaliando os dois últimos anos, qual é o número de novas parcerias para trocar recursos (água, energia, resíduos, subprodutos) que sua empresa estabeleceu com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Avaliando os dois últimos anos, qual é o número de novas parcerias para trocar recursos (água, energia, resíduos, subprodutos) que sua empresa estabeleceu com outra fábrica localizada em seu distrito/parque industrial.</h1>
       
       <div class="row">
           <div class="col-12">
@@ -706,7 +929,7 @@
       <!--Questão 14-->
 <section>
     <div class="question">
-      <h1>14- Sua empresa desenvolve relações de confiança com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa desenvolve relações de confiança com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -761,7 +984,7 @@
       <!--Questão 15-->
       <section>
      <div class="question">
-      <h1>15- Sua empresa compartilha informações de produção com outra fábrica localizada em um distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
+      <h1> Sua empresa compartilha informações de produção com outra fábrica localizada em seu distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
       
       <div class="form-check">
         <input class="form-check-input" type="radio" name="q15" id="q15Radios1" required value=1 onclick="validaQ15(this.value)">
@@ -784,7 +1007,7 @@
        <section>
 
     <div class="question q16 d-none">
-      <h1>16- Sua empresa compartilha informações de produção de nível estratégico e tático com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa compartilha informações de produção de nível estratégico e tático com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -839,7 +1062,7 @@
        <!--Questão 17-->
 <section>
     <div class="question q17 d-none">
-      <h1>17- Sua empresa compartilha frequentemente informações de produção com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa compartilha frequentemente informações de produção com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -901,7 +1124,7 @@
       <!--Questão 18-->
       <section>
      <div class="question">
-      <h1>18- Sua empresa tem acesso a dados/informação de produção de outra fábrica localizada em um distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
+      <h1> Sua empresa tem acesso a dados/informação de produção de outra fábrica localizada em seu distrito/parque industrial (resíduos que gera, insumos que utiliza, recursos que compartilha, etc.)?</h1>
       
       <div class="form-check">
         <input class="form-check-input" type="radio" name="q18" id="q18Radios1" required value=1 onclick="validaQ18(this.value)">
@@ -922,7 +1145,7 @@
       <section>
 
     <div class="question q19 d-none">
-      <h1>19- Sua empresa tem acesso a dados/informação de produção de nível estratégico e tático de outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa tem acesso a dados/informação de produção de nível estratégico e tático de outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -978,7 +1201,7 @@
       <section>
 
     <div class="question q20 d-none">
-      <h1>20- Sua empresa tem acesso frequente a dados/informação de produção de outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa tem acesso frequente a dados/informação de produção de outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -1039,7 +1262,7 @@
       <section>
 
     <div class="question">
-      <h1>21- Sua empresa tem acesso a fontes de financiamento (caso necessário) para realizar investimentos em infraestrutura para trocar água, energia, resíduos e subprodutos com outra fábrica localizada em um distrito/parque industrial.</h1>
+      <h1> Sua empresa tem acesso a fontes de financiamento (caso necessário) para realizar investimentos em infraestrutura para trocar água, energia, resíduos e subprodutos com outra fábrica localizada em seu distrito/parque industrial.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -1089,7 +1312,7 @@
 
        <section>
     <div class="question">
-      <h1>22- Sua empresa tem acesso a fontes de financiamento (caso necessário) para transformar o atual processo produtivo em um processo circular.</h1>
+      <h1> Sua empresa tem acesso a fontes de financiamento (caso necessário) para transformar o atual processo produtivo em um processo circular.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -1145,7 +1368,7 @@
        <section>
 
     <div class="question">
-      <h1>23- Sua empresa tem acesso a subsídio público de incentivo para formação de redes de troca de água, energia, resíduos e subprodutos.</h1>
+      <h1> Sua empresa tem acesso a subsídio público de incentivo para formação de redes de troca de água, energia, resíduos e subprodutos.</h1>
       <div class="row">
       <div class="col-4">
       <p class="text-1">1-Discordo totalmente</p></div>
@@ -1201,7 +1424,7 @@
       <section>
 
     <div class="question">
-        <h1>24- As políticas e regulamentações ambientais que a empresa está subordinada favorecem a troca de água, energia, resíduos e subprodutos com outra indústria localizada no distrito/parque.</h1>
+        <h1> As políticas e regulamentações ambientais que a empresa está subordinada favorecem a troca de água, energia, resíduos e subprodutos com outra indústria localizada no distrito/parque.</h1>
         <div class="row">
         <div class="col-4">
         <p class="text-1">1-Discordo totalmente</p></div>
@@ -1255,7 +1478,7 @@
 
       <section>
     <div class="question">
-        <h1>25- Sua empresa tem acesso à infraestrutura (compartilhamento de utilidades, estações de tratamento, estrutura de incêndio, etc.) que possibilite a troca de água, energia, resíduos e subprodutos com outra indústria localizada no distrito.</h1>
+        <h1> Sua empresa tem acesso à infraestrutura (compartilhamento de utilidades, estações de tratamento, estrutura de incêndio, etc.) que possibilite a troca de água, energia, resíduos e subprodutos com outra indústria localizada no distrito.</h1>
         <div class="row">
         <div class="col-4">
         <p class="text-1">1-Discordo totalmente</p></div>
@@ -1303,7 +1526,7 @@
 
 
         <div class="botao" style="margin-bottom: 30px;">
-          <button type="submit" class="btn btn-success">Concluir</button>
+          <button type="submit" class="btn btn-success">Ver Resultado</button>
          </div> 
    
 

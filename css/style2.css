@@ -3,15 +3,44 @@ body {
    }
    
    .secti {
-       max-width: 35%;
+       width: 65%;
        padding: 5px 20px 5px 20px;
-       background-color: rgb(61, 121, 46);
+       background-color: rgb(52, 87, 43);
+       box-shadow: rgb(88, 224, 88) 0px 5px 25px;
    }
+
+   .secti2 {
+    width: 65%;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(22, 87, 61);
+    color: white;
+    text-align: center;
+    box-shadow: rgb(187, 206, 187) 0px 5px 25px;
+}
+
+   @media(max-width: 768px){
+    .secti  {
+       width: 80%;
+      
+        
+    }
+    }
+
+
    
    .secti h1 {
        text-align: center;
+       color: white;
        
    }
+
+   @media(max-width: 768px){
+    .secti h1  {
+       font-size: 23px;
+      
+        
+    }
+    }
    
    .secti p {
        color: white;
@@ -73,6 +102,13 @@ body {
        margin-left: 45%;
        
    }
+
+   @media(max-width: 768px){
+    .text-3  {
+        margin-left:-10px;
+        
+    }
+    }
    
    .form-check-input:checked{
    
@@ -156,13 +192,25 @@ body {
    .form-check {
        margin-left: 5%;
    }
+
+   .form-check.form-check-inline{
+    margin:4%;
+   }
    
    
    section {
-       max-width: 65%;
+       width: 65%;
        margin: auto;
        background-color: whitesmoke;
        border-radius: 10px;
        margin-bottom: 3%;
    
    }
+
+   @media(max-width: 768px){
+    section  {
+       width: 80%;
+        
+        
+    }
+    }

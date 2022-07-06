@@ -7,12 +7,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.css">
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
     <link href="css/global.css" rel="stylesheet">
     
  
 
     <title>CARACTERIZAÇÃO DA EMPRESA</title>
+
+
+    <style>
+
+body {
+    background-color: rgba(151, 209, 151, 0.582);
+   }
+   
+   .secti {
+       width: 65%;
+       padding: 5px 20px 5px 20px;
+       background-color: rgb(52, 87, 43);
+       box-shadow: rgb(88, 224, 88) 0px 5px 25px;
+   }
+
+   .secti2 {
+    width: 65%;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(22, 87, 61);
+    color: white;
+    text-align: center;
+    box-shadow: rgb(187, 206, 187) 0px 5px 25px;
+}
+
+   @media(max-width: 768px){
+    .secti  {
+       width: 80%;
+      
+        
+    }
+    }
+
+
+   
+   .secti h1 {
+       text-align: center;
+       color: white;
+       
+   }
+
+   @media(max-width: 768px){
+    .secti h1  {
+       font-size: 23px;
+      
+        
+    }
+    }
+   
+   .secti p {
+       color: white;
+       font-size: 15px;
+       text-align: center;
+   }
+   
+   
+   .survey  {
+   
+       padding-top: 2%;
+       text-align: center;
+   
+   
+   }
+   
+   .survey2  {
+   
+       padding-top: 2%;
+       text-align: center;
+       
+   
+   
+   }
+   
+   
+   
+   .form-check.form-check-inline {
+   
+       margin-right: 5%;
+       margin-left: 5%;
+       /*margin-left: 4.5%;*/
+   }
+   
+   #porcentagem {
+   
+       margin-right: 2%;
+       margin-left: 2%;
+   
+   
+   }
+   
+   
+   
+   
+   
+   .text-1 {
+       text-align: left;
+       margin-left: 18%;
+   }
+   
+   .text-2 {
+       text-align: center;
+   
+   
+   }
+   
+   .text-3 {
+       margin-left: 45%;
+       
+   }
+
+   @media(max-width: 768px){
+    .text-3  {
+        margin-left:-10px;
+        
+    }
+    }
+   
+   .form-check-input:checked{
+   
+       color:black;
+       border-color: white;
+       background-color: black;
+       box-shadow: none;
+       background-image: none;
+       
+       
+   }
+   
+   .container {
+   
+       padding-top: 2%;
+       padding-bottom: 2%;
+       background-color: whitesmoke;
+       margin-top: 2%;
+       margin-bottom: 2%;
+       border-radius: 20px;
+   
+   
+   }
+   
+   .question {
+   
+       padding-bottom: 2%;
+   
+   
+   }
+   
+   .question h1 {
+   
+       font-size: 20px;
+       padding-bottom:10px ;
+       margin-left: 5%;
+       padding-top: 20px;
+       margin-right: 5%;
+       
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   @media (max-width: 576px) { 
+       
+       .form-check.form-check-inline {
+   
+           margin-right: 1.7%;
+           margin-left: 1.7%;
+          
+       }
+       
+       
+       
+       
+        
+   
+       #porcentagem {
+   
+           margin-right: 40%;
+           text-align: left;
+       }
+   
+       .survey2 {
+   
+           text-align: left;
+   
+   
+       }
+   
+       
+       
+   
+   }
+   
+   .form-check {
+       margin-left: 5%;
+   }
+
+   .form-check.form-check-inline{
+    margin:4%;
+   }
+   
+   
+   section {
+       width: 65%;
+       margin: auto;
+       background-color: whitesmoke;
+       border-radius: 10px;
+       margin-bottom: 3%;
+   
+   }
+
+   @media(max-width: 768px){
+    section  {
+       width: 80%;
+        
+        
+    }
+    }
+    </style>
   </head>
 
   <body>
@@ -24,9 +245,10 @@
 
    
     <form>
-      <section style="margin-top: 4%; padding-bottom: 1%;">
-      <h1 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 2%;">Seção - CARACTERIZAÇÃO DA EMPRESA</h1>
-      <p style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;">Relaciona-se à identificação da gestão de resíduos na empresa.</p>
+      <section class="secti" style="margin-top: 3%;">
+      <h1 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; padding-top: 2%;">Agora você irá responder questões sobre a identificação da gestão de
+        resíduos na empresa.</h1>
+      
       </section>
       <!--<section class="secti">
       <h1>RECURSO ÁGUA</h1>
@@ -37,7 +259,7 @@
     <!--Questão 1-->
     <section>
     <div class="question">
-    <h1>1- Sua empresa reconhece a relevância de manter a circularidade dos recursos (água, energia, resíduos, subprodutos) em seu planejamento estratégico, tático e operacional.</h1>
+      <h1> Sua empresa reconhece a relevância de manter a circularidade dos recursos (água, energia, resíduos, subprodutos) em seu planejamento estratégico, tático e operacional.</h1>
     <div class="row">
     <div class="col-4">
     <p class="text-1">1-Discordo totalmente</p></div>
@@ -88,7 +310,7 @@
     <!--Questão 2-->
 <section>
     <div class="question">
-        <h1>2- Sua empresa quantifica integralmente os resíduos gerados durante o processo de fabricação.</h1>
+      <h1> Sua empresa quantifica integralmente os resíduos gerados durante o processo de fabricação.</h1>
         <div class="row">
         <div class="col-4">
         <p class="text-1">1-Discordo totalmente</p></div>
@@ -139,7 +361,7 @@
 
     <section>
     <div class="question">
-        <h1>3- Sua empresa possui políticas e estratégias eficientes e eficazes para reintroduzir resíduos na própria linha de produção ou ao longo de sua cadeia produtiva e/ou em outras cadeias.</h1>
+      <h1> Sua empresa possui políticas e estratégias eficientes e eficazes para reintroduzir resíduos na própria linha de produção ou ao longo de sua cadeia produtiva e/ou em outras cadeias.</h1>
         <div class="row">
         <div class="col-4">
         <p class="text-1">1-Discordo totalmente</p></div>
@@ -191,7 +413,7 @@
 
   <section>
     <div class="question">
-        <h1>4- Minha empresa reintroduz eficientemente resíduos ao longo de sua cadeia produtiva e/ou em outras cadeias.</h1>
+        <h1> Minha empresa reintroduz eficientemente resíduos ao longo de sua cadeia produtiva e/ou em outras cadeias.</h1>
         <div class="row">
         <div class="col-4">
         <p class="text-1">1-Discordo totalmente</p></div>
@@ -242,7 +464,7 @@
 
      <section>
      <div class="question">
-        <h1>5- Sua empresa faz uso de algum tipo de plataforma de compartilhamento de recursos materiais (site virtual, banco de dados ou softwares para compra e venda de resíduos, partilha de subprodutos, etc.)?</h1>
+        <h1>Sua empresa faz uso de algum tipo de plataforma de compartilhamento de recursos materiais (site virtual, banco de dados ou softwares para compra e venda de resíduos, partilha de subprodutos, etc.)?</h1>
         
         <div class="form-check">
           <input class="form-check-input" type="radio" name="q1" id="q1Radios1" required value=1>
